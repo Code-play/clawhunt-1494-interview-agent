@@ -15,23 +15,30 @@
 
 ## 怎么拿到完整源码
 
-完整源码树（含 `interview_agent/`、`config/`、`samples/`、`tests/`、`verify/`）在本仓库根目录的压缩包里：
+两种方式，内容一致：
+
+**方式一（推荐，可直接浏览）**：`source/` 目录就是完整源码树，可逐文件查看：
 
 ```
-1494-interview-agent.zip
+source/
+  interview_agent/   代码（schema / config / anonymize / questions / assess / human_gate / cli）
+  config/            岗位配置、题库、阈值
+  samples/           三份脱敏候选样例（三条判定路径）
+  tests/             21 个单元测试
+  verify/            一键复跑脚本 + 验证记录
+  README.md          使用说明
+  DELIVERY.md        交付说明与验收对照
 ```
 
-下载后解压即得完整目录结构：
+**方式二**：根目录的 `1494-interview-agent.zip`（同样内容打包，便于整体下载）。
+
+任一方式取到后执行：
 
 ```bash
-unzip 1494-interview-agent.zip
-cd 1494-interview-agent
 pip install pyyaml
 python -m unittest discover -s tests -t .     # 21 个单元测试
 python verify/run_verification.py             # 18 条验证断言，一键复跑
 ```
-
-说明：GitHub 的网页上传界面不支持保留目录结构，因此源码以压缩包形式提供；`DELIVERY.md` 为交付说明与验收对照，逐项对应平台验收标准。
 
 ## 三条判定路径（`samples/`）
 

@@ -1,0 +1,28 @@
+{
+  "candidate_ref": "CAND-0002",
+  "position": "backend_engineer",
+  "_note": "合成样例，非真实候选人。用于演示「证据不足时不出结论，转人工补材料」。",
+  "declared": {
+    "years_experience": 4,
+    "education_level": "bachelor",
+    "certifications": []
+  },
+  "materials": {
+    "resume": {
+      "summary": "四年后端开发，做过服务拆分与接口性能优化，材料以项目片段为主。",
+      "highlights": [
+        "参与把告警服务从单体拆分出来，负责接口层改造。",
+        "用 Go 重写日志采集组件，重构后内存占用下降明显。"
+      ]
+    },
+    "qa_transcript": [
+      {
+        "q": "有没有做过容量规划？",
+        "a": "做过一次压测，容量结论记不清了。"
+      }
+    ],
+    "assessment_notes": [
+      "材料偏片段，缺少协作与责任维度的具体事例，无法引用原文。"
+    ]
+  }
+}

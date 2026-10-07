@@ -1,0 +1,8 @@
+# 评估守卫参数：把"什么时候不该给结论"写成配置
+guard:
+  # 有证据的维度权重占比低于此值 -> 不出结论，转人工补材料
+  min_evidence_coverage: 0.60
+  # 引用句子的最小长度：太短的片段不算证据
+  min_quote_chars: 12
+  # 加权得分低于 (此值 * 100) 视为不合格
+  borderline_confidence: 0.35

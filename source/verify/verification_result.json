@@ -1,0 +1,118 @@
+{
+  "generated_at": "2026-10-07T14:11:34.568396+00:00",
+  "position": "backend_engineer",
+  "checks_total": 18,
+  "checks_passed": 18,
+  "checks_failed": 0,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "脱敏校验 candidate_advance.json",
+      "expected": "通过",
+      "actual": "通过",
+      "passed": true
+    },
+    {
+      "name": "脱敏校验 candidate_needs_review.json",
+      "expected": "通过",
+      "actual": "通过",
+      "passed": true
+    },
+    {
+      "name": "脱敏校验 candidate_rule_reject.json",
+      "expected": "通过",
+      "actual": "通过",
+      "passed": true
+    },
+    {
+      "name": "准备包覆盖全部维度",
+      "expected": "5",
+      "actual": "5",
+      "passed": true
+    },
+    {
+      "name": "candidate_advance.json 建议结果",
+      "expected": "advance",
+      "actual": "advance",
+      "passed": true
+    },
+    {
+      "name": "candidate_advance.json 最终决定为空（机器人不写）",
+      "expected": "None",
+      "actual": "None",
+      "passed": true
+    },
+    {
+      "name": "candidate_advance.json 标注需人工复核",
+      "expected": "True",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "name": "candidate_needs_review.json 建议结果",
+      "expected": "needs_review",
+      "actual": "needs_review",
+      "passed": true
+    },
+    {
+      "name": "candidate_needs_review.json 最终决定为空（机器人不写）",
+      "expected": "None",
+      "actual": "None",
+      "passed": true
+    },
+    {
+      "name": "candidate_needs_review.json 标注需人工复核",
+      "expected": "True",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "name": "candidate_rule_reject.json 建议结果",
+      "expected": "not_recommended",
+      "actual": "not_recommended",
+      "passed": true
+    },
+    {
+      "name": "candidate_rule_reject.json 最终决定为空（机器人不写）",
+      "expected": "None",
+      "actual": "None",
+      "passed": true
+    },
+    {
+      "name": "candidate_rule_reject.json 标注需人工复核",
+      "expected": "True",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "name": "机器人写最终决定被拒",
+      "expected": "HumanDecisionViolation",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "name": "被拒后决定字段仍为空",
+      "expected": "None",
+      "actual": "None",
+      "passed": true
+    },
+    {
+      "name": "人类评审写入成功",
+      "expected": "hold",
+      "actual": "hold",
+      "passed": true
+    },
+    {
+      "name": "审计记录含是否同意建议",
+      "expected": "True",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "name": "单元测试全部通过",
+      "expected": "returncode 0",
+      "actual": "0",
+      "passed": true
+    }
+  ]
+}

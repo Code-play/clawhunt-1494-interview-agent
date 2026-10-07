@@ -1,0 +1,90 @@
+# 岗位配置：后端工程师（示例岗位，复制本文件改 signals 即可换岗位）
+position: backend_engineer
+title: 后端工程师
+
+# 每个维度都必须给 signals：评估时只在材料里找这些信号所在的句子作为证据。
+# 找不到信号 -> 该维度直接进 refused_items，不给分（强制有依据）。
+dimensions:
+  - key: system_design
+    label: 系统设计
+    weight: 0.30
+    look_for: 能否说清边界、取舍与失败路径
+    signals:
+      - 架构
+      - 微服务
+      - 拆分
+      - 容量
+      - 限流
+      - 高可用
+      - 降级
+
+  - key: coding_depth
+    label: 编码深度
+    weight: 0.25
+    look_for: 是否落到具体实现细节与调试过程
+    signals:
+      - python
+      - go
+      - java
+      - 重构
+      - 单元测试
+      - 性能优化
+      - 复杂度
+
+  - key: data_storage
+    label: 数据与存储
+    weight: 0.20
+    look_for: 索引、事务、一致性取舍
+    signals:
+      - 数据库
+      - 索引
+      - 事务
+      - 分库分表
+      - 缓存
+      - 消息队列
+      - 一致性
+
+  - key: collaboration
+    label: 协作与推进
+    weight: 0.15
+    look_for: 跨团队推动与冲突处理的具体事例
+    signals:
+      - 协作
+      - 推动
+      - 对齐
+      - 跨团队
+      - review
+      - 带人
+      - 排期
+
+  - key: ownership
+    label: 责任与复盘
+    weight: 0.10
+    look_for: 线上事故与复盘的真实角色
+    signals:
+      - 复盘
+      - 事故
+      - 值班
+      - 根因
+      - 排查
+      - 止损
+      - 故障
+
+# 证据只从候选人自述类字段里取。面试官自己的备注不作为证据来源 ——
+# 否则等于用"面试官的判断"证明"面试官的判断"。
+evidence_sources:
+  - resume
+  - qa_transcript
+
+# 硬性规则：命中即建议不通过（但仍须人工确认后才生效）
+hard_rules:
+  - key: min_years
+    label: 工作经验下限
+    field: declared.years_experience
+    op: min_value
+    value: 3
+  - key: required_education
+    label: 学历要求
+    field: declared.education_level
+    op: required_in
+    value: bachelor
