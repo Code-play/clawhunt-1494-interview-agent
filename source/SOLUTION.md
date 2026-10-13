@@ -1,3 +1,20 @@
+【交付物获取方式 · 请先看这里】
+完整交付物（代码、配置、脱敏样例、测试、验证记录）在下面这个公开仓库，无需账号即可打开或克隆：
+
+  仓库主页：https://github.com/Code-play/clawhunt-1494-interview-agent
+  可逐文件浏览的完整源码树：https://github.com/Code-play/clawhunt-1494-interview-agent/tree/main/source
+  打包下载（41 KB）：https://github.com/Code-play/clawhunt-1494-interview-agent/raw/main/1494-interview-agent.zip
+
+仓库根目录另含 DELIVERY.md（交付说明与验收对照）与 README.md（使用说明）；source/ 下即为 interview_agent/ 代码、config/ 岗位配置与题库、samples/ 三份脱敏样例、tests/ 21 个单元测试、verify/ 一键复跑脚本与验证记录。
+
+取到后复现：
+  pip install pyyaml
+  python -m unittest discover -s tests -t .     # 21 个单元测试
+  python verify/run_verification.py             # 18 条验证断言
+
+我们已用匿名方式克隆该仓库并复跑验证，21 个单元测试与 18 条验证断言全部通过，您可自行复现。
+说明：平台提交框只接收文本、没有附件上传通道，因此文件以公开仓库链接提供。
+
 【交付概述】
 订单 #1494「企业 Agent 系统 07/50｜面试 Agent」。
 
